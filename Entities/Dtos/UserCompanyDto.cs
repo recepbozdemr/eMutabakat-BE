@@ -1,4 +1,4 @@
-﻿using Core.Entities;
+﻿using Core.Entities.Concrate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace Entities.Dtos
 {
-    public class UserForLogin : IDto
+    public class UserCompanyDto : User
     {
-        public string Email { get; set; }
-
-        public string Password { get; set; }
+        public int CompanyId { get; set; }
     }
 }

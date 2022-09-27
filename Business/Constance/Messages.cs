@@ -21,9 +21,6 @@ namespace Business.Constance
         public static string UserNotFoundForCompanyAndUserAndRole = "Şirket için kullanıcı bulunamadı";
         public static string UserNotFoundForCompanyAndUserAndRoleAndOperation = "Şirket için kullanıcı bulunamadı";
         public static string UserNotFoundForCompanyAndUserAndRoleAndOperationAndOperationClaim = "Şirket için kullanıcı bulunamadı";
-            
-        
-
-
+        public static string CompanyAlreadyExist = "Bu şirket daha önce kaydedilmiş";
     }
 }
