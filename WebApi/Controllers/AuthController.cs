@@ -20,13 +20,11 @@ namespace WebApi.Controllers
         [HttpPost("register")]
         public IActionResult Register(UserAndCompanyRegisterDto userAndCompanyRegister)
         {
-
             var userExists = _authService.UserExists(userAndCompanyRegister.UserForRegister.Email);
             if (!userExists.Success)
             {
                 return BadRequest(userExists.Message);
             }
-
             var companyExist = _authService.CompanyExists(userAndCompanyRegister.Company);
             if (!userExists.Success)
             {

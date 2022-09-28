@@ -20,16 +20,23 @@ namespace Business.Concrete
         private readonly IUserService _userService;
         private readonly ITokenHelper _tokenHelper;
         private readonly ICompanyService _companyService;
+        private readonly IMailParemeterService _mailParemeterService;
+        private readonly IMailService _mailService;
 
-        public AuthManager(IUserService userService , ITokenHelper tokenHelper , ICompanyService companyService)
+      
+
+        public AuthManager(IUserService userService, ITokenHelper tokenHelper, ICompanyService companyService, IMailParemeterService mailParemeterService, IMailService mailService)
         {
             _userService = userService;
             _tokenHelper = tokenHelper;
+            _companyService = companyService;
+            _mailParemeterService = mailParemeterService;
+            _mailService = mailService;
         }
 
         public IResult CompanyExists(Company company)
         {
-            var result = _companyService.CompanyExist(company);
+            var result = _companyService.CompanyExists(company);
             if (result.Success == false)
             {
                 return new ErrorResult(Messages.CompanyAlreadyExist);
@@ -75,6 +82,7 @@ namespace Business.Concrete
                 PasswordSalt = passwordSalt,
                 Name = userForRegister.Name,
             };
+          
             _userService.Add(user);
             _companyService.Add(company);
             _companyService.UserCompanyAdd(user.Id, company.Id);
@@ -92,6 +100,15 @@ namespace Business.Concrete
                 PasswordHash = user.PasswordHash,
                 PasswordSalt = user.PasswordSalt,
             };
+            var mailParameter = _mailParemeterService.Get(1);
+            SendMailDto sendMailDto = new SendMailDto()
+            {
+                mailParemeter = mailParameter.Data,
+                Mail = user.EMail,
+                Subject = "Kullanıcı Onay Mail",
+                Body = "Kayıt olundu linke tıkla"
+            };
+            _mailService.SendMail(sendMailDto);
             return new SuccesDataResult<UserCompanyDto>(userCompanyDto, Messages.UserRegistered);
         }
 

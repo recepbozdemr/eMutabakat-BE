@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities.Concrate
 {
-    public class Company:IEntity
+    public class Company : IEntity
     {
         public int Id { get; set; }
 
@@ -24,6 +24,5 @@ namespace Entities.Concrate
         public DateTime AddedAt { get; set; }
 
         public bool IsActive { get; set; }
-
     }
 }

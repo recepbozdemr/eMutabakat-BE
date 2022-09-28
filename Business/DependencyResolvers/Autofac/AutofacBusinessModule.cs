@@ -3,6 +3,7 @@ using Business.Abstract;
 using Business.Concrete;
 using Core.Utilities.Security.JWT;
 using DataAccess.Abstract;
+using DataAccess.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using System;
 using System.Collections.Generic;
@@ -39,6 +40,9 @@ namespace Business.DependencyResolvers.Autofac
 
             builder.RegisterType<MailParemeterManager>().As<IMailParemeterService>();
             builder.RegisterType<EfMailParemeterDal>().As<IMailParemeterDal>();
+
+            builder.RegisterType<MailManager>().As<IMailService>();
+            builder.RegisterType<EfMailDal>().As<IMailDal >();
 
             builder.RegisterType<UserManager>().As<IUserService>();
             builder.RegisterType<EfUserDal>().As<IUserDal>();

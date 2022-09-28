@@ -25,6 +25,7 @@ namespace DataAccess.Concrete.EntityFramework
                     IsActive = true
                 };
                 context.UserCompanies.Add(userCompany);
+                context.SaveChanges();
             }
         }
     }

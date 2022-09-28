@@ -1,5 +1,5 @@
 ﻿using Core.Utilities.Results.Abstract;
-using Entities.Concrate;
+using Entities.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +8,8 @@ using System.Threading.Tasks;
 
 namespace Business.Abstract
 {
-    public interface IMailParemeterService
+    public interface IMailService
     {
-        IResult Update(MailParemeter mailParemeter);
-        
-        IDataResult<MailParemeter> Get(int companyId);
+        IResult SendMail(SendMailDto sendMailDto);
     }
 }
