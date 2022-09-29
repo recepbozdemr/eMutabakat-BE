@@ -1,4 +1,5 @@
-﻿using Entities.Concrate;
+﻿using Core.Entities;
+using Entities.Concrate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Entities.Dtos
 {
-    public class UserAndCompanyRegisterDto
+    public class UserAndCompanyRegisterDto : IDto
     {
       public  UserForRegister UserForRegister { get; set; }
         

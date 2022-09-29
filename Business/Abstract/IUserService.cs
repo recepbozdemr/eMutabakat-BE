@@ -11,6 +11,9 @@ namespace Business.Abstract
     {
         List<OperationsClaim> GetClaims(User user , int companyId);
         void Add(User user);
+        void Update(User user);
+        User GetById(int id);
         User GetByMail(string email);
+        User GetByMailConfirmValue(string email);
     }
 }

@@ -1,4 +1,5 @@
-﻿using Entities.Concrate;
+﻿using Core.Entities;
+using Entities.Concrate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Entities.Dtos
 {
-    public class SendMailDto
+    public class SendMailDto : IDto
     {
     public MailParemeter mailParemeter { get; set; }
     public string Mail { get; set; }

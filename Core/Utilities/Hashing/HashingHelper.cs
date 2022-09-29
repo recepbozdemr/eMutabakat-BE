@@ -27,7 +27,6 @@ namespace Core.Utilities.Hashing
                     {
                         return false;
                     }
-
                 }
             }
             return true;
