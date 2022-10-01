@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CCQFBCkyh6B4D0p5xo2wGhb46E3gf/6LPy9Sl5dAQCMtaW3XwE5OquevtkGpxv8fa/wqnEP0nkdXaruGztQAwA==",
+  "dgSpecHash": "MKrSZ0wU1YuIUew6LE3MwaKBRZUw8P5QEuSw5mg8vwkWHQwOZopog6lNHPFWAqHBqiMgpELIwAJZhx7xNejbOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\RECEP\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
+    "C:\\Users\\RECEP\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.9\\microsoft.aspnetcore.cryptography.internal.6.0.9.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.9\\microsoft.aspnetcore.cryptography.keyderivation.6.0.9.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -26,6 +28,7 @@
     "C:\\Users\\RECEP\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\RECEP\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"

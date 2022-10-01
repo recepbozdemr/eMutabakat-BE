@@ -1,5 +1,8 @@
 ﻿using Business.Abstract;
 using Business.Constance;
+using Business.Validation.FluentValidation;
+using Core.Aspect.Autofac.Validation;
+using Core.Entities.Concrate;
 using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
@@ -19,15 +22,11 @@ namespace Business.Concrete
         {
             _companyDal = companyDal;
         }
-
+        [ValidationAspect(typeof(CompanyValidator))]
         public IResult Add(Company company)
-        {
-            if (company.Name.Length > 10)
-            {
+        {     
                 _companyDal.Add(company);
-                return new SuccessResult(Messages.AddEdCompany);
-            }       
-            return new ErrorResult("Şirket adı en az 10 Karakter olmalı.");
+                return new SuccessResult(Messages.AddEdCompany); 
         }
 
         public IResult CompanyExists(Company company)
@@ -38,6 +37,11 @@ namespace Business.Concrete
                 return new ErrorResult(Messages.CompanyAlreadyExist);
             }
             return new SuccessResult();
+        }
+
+        public IDataResult<UserCompany> GetCompany(int userId)
+        {
+            return new SuccesDataResult<UserCompany>(_companyDal.GetCompanyList(userId));
         }
 
         public IDataResult<List<Company>> GetList()

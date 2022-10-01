@@ -13,6 +13,15 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfCompanyDal : EfEntityRepositoryBase<Company, ContextDb>, ICompanyDal
     {
+        public UserCompany GetCompanyList(int userId)
+        {
+            using (var context = new ContextDb())
+            {
+                var result = context.UserCompanies.Where(c => c.UserId == userId).FirstOrDefault();
+                return result;
+            }
+        }
+
         public void UserCompanyAdd(int userId, int companyId)
         {
             using (var context = new ContextDb()) {

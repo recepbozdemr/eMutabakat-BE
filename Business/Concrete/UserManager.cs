@@ -1,6 +1,9 @@
 ﻿using Business.Abstract;
+using Business.Validation.FluentValidation;
+using Core.Aspect.Autofac.Validation;
 using Core.Entities.Concrate;
 using DataAccess.Abstract;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +20,10 @@ namespace Business.Concrete
         {
             _userDal = userDal;
         }
-
+        [ValidationAspect(typeof(UserValidator))]
         public void Add(User user)
-        {
-           _userDal.Add(user);
+        {       
+            _userDal.Add(user);
         }
 
         public User GetById(int id)

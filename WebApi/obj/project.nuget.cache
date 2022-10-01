@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "ssAIOQK9KAsJMBFxIQxOw4lIAU0xl1XgZp2ph2kC3tMrQBVhfNgGuPI1YMxJh97XQHLw1yy6m7lprlGZVGk1ww==",
+  "dgSpecHash": "+tf/i5Y4Ny5d6dAHUzGX330C6V4ZvoiQLk1lXcH9/+dNekxAZ8yvN2NHEi0K6NfNsfuwlXjwzNXA4e8m7tt59Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RECEP\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
+    "C:\\Users\\RECEP\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.1\\autofac.extras.dynamicproxy.6.0.1.nupkg.sha512",
+    "C:\\Users\\RECEP\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
+    "C:\\Users\\RECEP\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.9\\microsoft.aspnetcore.authentication.jwtbearer.6.0.9.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.9\\microsoft.aspnetcore.cryptography.internal.6.0.9.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.9\\microsoft.aspnetcore.cryptography.keyderivation.6.0.9.nupkg.sha512",
@@ -46,6 +49,7 @@
     "C:\\Users\\RECEP\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\RECEP\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\system.runtime.caching\\4.7.0\\system.runtime.caching.4.7.0.nupkg.sha512",

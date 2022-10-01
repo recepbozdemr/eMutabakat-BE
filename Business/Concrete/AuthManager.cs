@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constance;
+using Business.Validation.FluentValidation;
+using Core.CrossCuttingConcerres.Validation;
 using Core.Entities.Concrate;
 using Core.Utilities.Hashing;
 using Core.Utilities.Results.Abstract;
@@ -7,6 +9,7 @@ using Core.Utilities.Results.Concrete;
 using Core.Utilities.Security.JWT;
 using Entities.Concrate;
 using Entities.Dtos;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -75,10 +78,12 @@ namespace Business.Concrete
                 return new ErrorDataResult<User>(Messages.PasswordError);
             }
             return new SuccesDataResult<User>(userToCheck , Messages.SuccessfulLogin);
-
         }
+
+   
         public IDataResult<UserCompanyDto> Register(UserForRegister userForRegister, string password , Company company)
         {
+         
             byte[] passwordHash, passwordSalt;
             HashingHelper.CreatePasswordHash(password , out passwordHash , out passwordSalt);
             var user = new User
@@ -92,7 +97,10 @@ namespace Business.Concrete
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
                 Name = userForRegister.Name,
-            };        
+            };
+
+            //Validation Control
+          
             _userService.Add(user);
             _companyService.Add(company);
             _companyService.UserCompanyAdd(user.Id, company.Id);
@@ -141,9 +149,26 @@ namespace Business.Concrete
             _userService.Update(user);
         }
 
-        public IDataResult<User> RegisterSecondAccount(UserForRegister userForRegister, string password)
+        public IDataResult<User> RegisterSecondAccount(UserForRegister userForRegister, string password, int companyId)
         {
-            throw new NotImplementedException();
+            byte[] passwordHash, passwordSalt;
+            HashingHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
+            var user = new User
+            {
+                EMail = userForRegister.Email,
+                AddedAt = DateTime.Now,
+                IsActive = true,
+                MailConfirm = false,
+                MailConfirmDate = DateTime.Now,
+                MailConfirmValue = Guid.NewGuid().ToString(),
+                PasswordHash = passwordHash,
+                PasswordSalt = passwordSalt,
+                Name = userForRegister.Name,
+            };
+            _userService.Add(user);
+            _companyService.UserCompanyAdd(user.Id, companyId);
+            SendConfirmEmail(user);
+            return new SuccesDataResult<User>(user, Messages.UserRegistered);
         }
 
         public IResult Update(User user)
@@ -183,6 +208,11 @@ namespace Business.Concrete
             }
             SendConfirmEmail(user);
             return new SuccessResult(Messages.MailSuccessFull);
+        }
+
+        public IDataResult<UserCompany> GetCompany(int userId)
+        {
+            return new SuccesDataResult<UserCompany>(_companyService.GetCompany(userId).Data);
         }
     }
 }

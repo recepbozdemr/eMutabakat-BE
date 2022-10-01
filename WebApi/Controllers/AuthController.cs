@@ -41,40 +41,44 @@ namespace WebApi.Controllers
         }
 
         [HttpPost("registerSeconAccount")]
-        public IActionResult RegisterSecondAccount(UserAndCompanyRegisterDto userAndCompanyRegister)
+        public IActionResult RegisterSecondAccount(UserForRegisterToSecondAccountDto userForRegister)
         {
-            var userExists = _authService.UserExists(userAndCompanyRegister.UserForRegister.Email);
+            var userExists = _authService.UserExists(userForRegister.Email);
             if (!userExists.Success)
             {
                 return BadRequest(userExists.Message);
             }
-            var registerResult = _authService.Register(userAndCompanyRegister.UserForRegister, userAndCompanyRegister.UserForRegister.Password , userAndCompanyRegister.Company);
-            var result = _authService.CreateAccessToken(registerResult.Data, registerResult.Data.CompanyId);
+            var registerResult = _authService.RegisterSecondAccount(userForRegister, userForRegister.Password , userForRegister.CompanyId);
+            var result = _authService.CreateAccessToken(registerResult.Data, userForRegister.CompanyId);
             if (result.Success)
             {
                 return Ok(result.Data);
             }
-            //if (registerResult.Success)
-            //{
-            //    return Ok(registerResult);
-            //}
             return BadRequest(registerResult.Message);
         }
 
         [HttpPost("login")]
         public IActionResult Login(UserForLogin userForLogin)
-        {
+        {        
             var userToLogin = _authService.Login(userForLogin);
             if (!userToLogin.Success)
             {
                 return BadRequest(userToLogin.Message);
             }
-            var result = _authService.CreateAccessToken(userToLogin.Data, 0);
-            if (result.Success)
+            if (userToLogin.Data.IsActive)
             {
-                return Ok(result.Data);
+                var userCompany = _authService.GetCompany(userToLogin.Data.Id).Data;
+                var result = _authService.CreateAccessToken(userToLogin.Data, userCompany.CompanyId);
+                if (result.Success)
+                {
+                    return Ok(result.Data);
+                }
+                return BadRequest(result.Message);
             }
-            return BadRequest(result.Message);
+            else
+            {
+                return BadRequest("Kullanıcı pasif durumda. Aktif etmek için yöneticinize danışın");
+            }       
         }
 
         [HttpGet("confirmUser")]

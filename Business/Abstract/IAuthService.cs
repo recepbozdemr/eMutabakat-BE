@@ -15,7 +15,7 @@ namespace Business.Abstract
     {
         IDataResult<UserCompanyDto> Register(UserForRegister userForRegister, string password, Company company);
         
-        IDataResult<User> RegisterSecondAccount(UserForRegister userForRegister, string password);
+        IDataResult<User> RegisterSecondAccount(UserForRegister userForRegister , string password , int companyId);
         
         IDataResult<User> Login(UserForLogin userForLogin);
         
@@ -32,5 +32,7 @@ namespace Business.Abstract
         IResult SendConfirmEmail(User user);
 
         IDataResult<AccessToken> CreateAccessToken(User user, int companyId);
+
+        IDataResult<UserCompany> GetCompany(int userId);
     }
 }
