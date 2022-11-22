@@ -36,6 +36,27 @@ namespace Business.Constance
         public static string MailTemplateListedForCompany = "Mail şablonları başarıyla listelendi"; 
         public static string MailAlready = "Mail onaylı tekrar gönderim yapılmadı"; 
         public static string MailConfirmTimeHasNotExpired = "Mail onayını 5 dakikada bir gönderebilirsiniz.";
+        public static string UpdateCompany = "Şirket kaydı başarıyla güncellendi .";
+        public static string AddedCurrencyAccount = "Cari kaydı başarıyla eklendi .";
+        public static string AddedCurrencyAccountDelete = "Cari kaydı başarıyla silindi .";
+        public static string AddedCurrencyAccountUpdate = "Cari kaydı başarıyla güncellendi .";
+        public static string AddedCurrencyAccountList = "Cari kaydı başarıyla listelendi .";
+        public static string AddedReconiliationAccountAdd = "Cari mütabakakat kaydı başarılı şekilde eklendi .";
+        public static string AddedReconiliationAccountUpdate = "Cari mütabakakat kaydı başarılı şekilde güncellendi .";
+        public static string AddedReconiliationAccountDelete = "Cari mütabakakat kaydı başarılı şekilde silindi .";
+        
+        public static string AddedReconiliationDetailAdd = "Cari mütabakakat detayı başarılı şekilde eklendi.";
+        public static string AddedReconiliationDetailUpdate = "Cari mütabakakat detayı başarılı şekilde güncellendi.";
+        public static string AddedReconiliationDetailDelete = "Cari mütabakakat detayı başarılı şekilde silindi.";
+        
+        public static string BaBsReconciliationAdd = "BaBs kaydı başarılı şekilde eklendi.";
+        public static string BaBsReconciliationDelete = "BaBs kaydı başarılı şekilde silindi.";
+        public static string BaBsReconciliationUpdate = "BaBs kaydı başarılı şekilde güncellendi.";
+
+        public static string BaBsReconciliationDetailAdd = "BaBs detay kaydı başarılı şekilde eklendi.";
+        public static string BaBsReconciliationDetailDelete = "BaBs detay kaydı başarılı şekilde silindi.";
+        public static string BaBsReconciliationDetailUpdate = "BaBs detay kaydı başarılı şekilde güncellendi.";
+
 
     }
 }

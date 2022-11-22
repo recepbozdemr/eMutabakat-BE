@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Business\\Business.csproj": {}
+    "D:\\eMutabakat-BE\\Business\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Business\\Business.csproj": {
+    "D:\\eMutabakat-BE\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Business\\Business.csproj",
+        "projectUniqueName": "D:\\eMutabakat-BE\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Business\\Business.csproj",
+        "projectPath": "D:\\eMutabakat-BE\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\RECEP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Business\\obj\\",
+        "outputPath": "D:\\eMutabakat-BE\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RECEP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -30,11 +30,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\DataAccess\\DataAccess.csproj"
+              "D:\\eMutabakat-BE\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\eMutabakat-BE\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Entities\\Entities.csproj"
+              "D:\\eMutabakat-BE\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\eMutabakat-BE\\Entities\\Entities.csproj"
               }
             }
           }
@@ -61,6 +61,10 @@
               "target": "Package",
               "version": "[5.1.0, )"
             },
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[10.4.0, )"
@@ -85,14 +89,14 @@
         }
       }
     },
-    "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Core\\Core.csproj": {
+    "D:\\eMutabakat-BE\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\eMutabakat-BE\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Core\\Core.csproj",
+        "projectPath": "D:\\eMutabakat-BE\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\RECEP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Core\\obj\\",
+        "outputPath": "D:\\eMutabakat-BE\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RECEP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -175,14 +179,14 @@
         }
       }
     },
-    "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\DataAccess\\DataAccess.csproj": {
+    "D:\\eMutabakat-BE\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\eMutabakat-BE\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\DataAccess\\DataAccess.csproj",
+        "projectPath": "D:\\eMutabakat-BE\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\RECEP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\DataAccess\\obj\\",
+        "outputPath": "D:\\eMutabakat-BE\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RECEP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -201,8 +205,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Entities\\Entities.csproj"
+              "D:\\eMutabakat-BE\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\eMutabakat-BE\\Entities\\Entities.csproj"
               }
             }
           }
@@ -241,14 +245,14 @@
         }
       }
     },
-    "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Entities\\Entities.csproj": {
+    "D:\\eMutabakat-BE\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\eMutabakat-BE\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Entities\\Entities.csproj",
+        "projectPath": "D:\\eMutabakat-BE\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\RECEP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Entities\\obj\\",
+        "outputPath": "D:\\eMutabakat-BE\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RECEP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -267,8 +271,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Core\\Core.csproj"
+              "D:\\eMutabakat-BE\\Core\\Core.csproj": {
+                "projectPath": "D:\\eMutabakat-BE\\Core\\Core.csproj"
               }
             }
           }
@@ -282,6 +286,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

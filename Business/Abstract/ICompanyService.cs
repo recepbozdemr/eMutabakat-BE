@@ -1,6 +1,7 @@
 ﻿using Core.Entities.Concrate;
 using Core.Utilities.Results.Abstract;
 using Entities.Concrate;
+using Entities.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,12 @@ namespace Business.Abstract
     {
 
         IResult Add(Company company);
+        
+        IResult Update(Company company);
+
+        IDataResult<Company> GetById(int id);
+
+        IResult AddCompanyAndUserCompany(CompanyDto companyDto);
 
         IDataResult<List<Company>> GetList();
 

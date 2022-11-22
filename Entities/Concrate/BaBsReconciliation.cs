@@ -37,7 +37,7 @@ namespace Entities.Concrate
 
         public DateTime? ResultDate { get; set; }
 
-        public string ResultNote1 { get; set; }
+        public string? ResultNote1 { get; set; }
 
     }
 }

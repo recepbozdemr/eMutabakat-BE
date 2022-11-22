@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "icx4hb2CaqHhLL9m6PSFGe4uuuy4yq17WNWVL1maBg+bjyC/fS9WGqTVy28qVzn40dAZ4Atksq5lOuCb9opC/Q==",
+  "dgSpecHash": "UMC6/r7z+FAj0hRGXuc78OAJbv8nLAstrHk/RkEM6wRC0Yg1hBAy8Z3kuj2MKoQtceunKrvXKokMjRiqiKuWSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Core\\Core.csproj",
+  "projectFilePath": "D:\\eMutabakat-BE\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RECEP\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
     "C:\\Users\\RECEP\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",

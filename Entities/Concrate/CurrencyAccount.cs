@@ -21,9 +21,9 @@ namespace Entities.Concrate
 
         public string TaxDepartment { get; set; }
 
-        public string TaxIdNumber { get; set; }
+        public string? TaxIdNumber { get; set; }
 
-        public string IdentityNumber { get; set; }
+        public string? IdentityNumber { get; set; }
 
         public string Email { get; set; }
 

@@ -1080,11 +1080,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Core\\Core.csproj",
+      "projectUniqueName": "D:\\eMutabakat-BE\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Core\\Core.csproj",
+      "projectPath": "D:\\eMutabakat-BE\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\RECEP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RECEP\\Desktop\\eMutebakatProject\\Core\\obj\\",
+      "outputPath": "D:\\eMutabakat-BE\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\RECEP\\AppData\\Roaming\\NuGet\\NuGet.Config",
